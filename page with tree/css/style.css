@@ -1,0 +1,176 @@
+﻿body{
+	height: 100vh;
+}
+h2{
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+#first{
+	background-color: grey;
+	padding-bottom: 20px;
+}
+.content_1{
+	width: 50%;
+	margin: 0px auto;
+	text-align: center;
+}
+.calc_num ul{
+}
+.calc_num li{
+}
+#calc input[name="operator"],
+#calc input[name="first_num"],
+#calc input[name="second_num"]{
+	width: 30px;
+}
+#calc input[name="result"]{
+	width: 70px;
+	border: none;
+	background-color: #eee;
+}
+input {
+	margin-bottom: 5px;
+}
+select {
+	margin-bottom: 5px;
+}
+
+
+#second{
+	height: 260px;
+	background-color: #a66868;
+}
+nav{
+	width: 90px;
+	height: 90px;
+	padding-top: 10px;
+	margin: 0px auto;
+}
+#menu p{
+	text-align: center;
+	padding: 5px;
+	background-color: #5a52b3;
+	letter-spacing: 4px;
+}
+#menu p:hover{
+	background-color: #342d7a;
+	cursor: pointer;
+}
+#s_menu li{
+	text-align: center;
+	border-top: none;
+}
+#s_menu a{
+	display: block;
+	padding-bottom: 2px;
+}
+#s_menu a:hover{
+	background-color: black;
+	color: white;
+}
+#s_menu li{
+	visibility: hidden;
+}
+.show_menu li a{
+	visibility: visible;
+	border: 1px solid black;
+}
+
+
+#third{
+	height: 250px;
+	background-color: #2E35ED;
+}
+
+#controls{
+	height: 40px;
+}
+#controls input{
+	margin-top: 5px;
+	margin-left: 10%; 
+}
+.hidden_button input:first-child{
+	display: none;
+}
+/*тута позиции кнопки*/
+.buttons {
+	text-align: center;
+}
+#new_button{
+	margin-top: 5px;
+	margin-left: 50%; 
+}
+
+/*пространство в переключателе*/
+.buttons input[id="checkbox1"] {
+	width: 30px;
+	height: 15px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background: #08ED00;
+	border-radius: 50px;
+	transition: 0.5s;
+	position: relative;
+}
+.buttons input:checked[id="checkbox1"] {
+	background: #ED1912;
+}
+/*пространство в переключателе*/
+.buttons input[id="checkbox2"] {
+	width: 30px;
+	height: 15px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background: #ED1912;
+	border-radius: 50px;
+	transition: 0.5s;
+	position: relative;
+}
+.buttons input:checked[id="checkbox2"] {
+	background: #08ED00;
+}
+#checkboxMain{
+	width: 35px;
+	height: 20px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background: yellow;
+	border-radius: 50px;
+	position: relative;
+	cursor: pointer;
+}
+
+/*для пятой части слайды*/
+#slides{
+    height: 130px;
+    width: 200px;
+    margin: 0px auto;
+}
+
+.slide{
+	width: 200px;
+	height: 130px;
+    position: absolute;
+    background: no-repeat;
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+.showing{
+    opacity: 1;
+    z-index: 2;
+}
+.slide:nth-of-type(1){
+    background-image: url('../img/pic_3.jpg');
+    
+}
+.slide:nth-of-type(2){
+    background-image: url('../img/pic_2.jpg');
+}
+.slide:nth-of-type(3){
+    background-image: url('../img/pic_1.jpg');
+}

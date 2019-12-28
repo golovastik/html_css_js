@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>WEB page</title>
+	<meta charset = "utf-8">
+	<link rel = "stylesheet" href = "css/reset.css">
+	<link rel = "stylesheet" href = "css/style.css">
+</head>
+<body>
+	<!--первая часть-->
+	<div id = "first">
+		<div class = "calc_num">
+			<form id = "calc">
+				<div class = "content_1">
+					<h2>вычисления</h2>
+					<div>
+						<ul>
+							<li><span>число №1:  </span><input type = "text" name = "first_num"></li>
+						<!--
+						<li><span>оператор(+, -, *, /):  </span><input type = "text" name = "operator"></li>
+					-->
+					<li>
+						<label for = "operator">оператор: </label>
+						<select type = "text" name = "operator"> 
+							<option value = "+">+</option>
+							<option value = "-">-</option>
+							<option value = "*">*</option>
+							<option value = "/">/</option>
+						</select>
+					</li>
+					<li><span>число №2:  </span><input type = "text" name = "second_num"/></li>
+				</ul>
+			</div>
+			<div>
+				<input type="button" value="считать" id = "do_it"/>
+			</div>
+			<div>
+				<label>ответ: </label><input type = "text" name = "result" readonly/>
+			</div>
+		</div>
+	</form>
+</div>
+</div>
+
+
+<!-- вторая часть и пятая-->
+<div id = "second">
+	<ul class = "showing_doule">
+		<li>
+			<nav  id = "menu" onclick = "menu()">
+				<p>MENU</p>
+				<ul id = "s_menu">
+					<li><a href = "#">link_1</a></li>
+					<li><a href = "#">link_2</a></li>
+					<li><a href = "#">link_3</a></li>
+				</ul>
+			</nav>
+		</li>
+		<!--пятая-->
+		<li>
+			<ul id="slides">
+				<li class="slide showing"></li>
+				<li class="slide"></li>
+				<li class="slide"></li>
+			</ul>
+		</li>
+		
+	</ul>
+</div>
+
+<!-- третья часть-->
+<div id = "third">
+	<div id = "controls">
+		<input type = "button" value = "today is 30 desember" id = "christmas_tree"/>
+	</div>
+	<div class = "buttons" id = "buttons">
+		<input type = "checkbox" id = "checkboxMain" onclick="clickFire(this)"/>
+	</div>
+	<div id = "controls">
+		<input type = "button" value = "five months later....." id = "christmas_tree_leave"/>
+	</div>
+</div>
+<script src = "js/script.js"></script>
+</body>
+</html>
