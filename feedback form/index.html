@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>WEB page</title>
+	<meta charset = "utf-8">
+	<link rel = "stylesheet" href = "css/reset.css">
+	<link rel = "stylesheet" href = "css/style.css">	
+</head>
+<body>
+	<div class = "fonStyle">
+		<div class = "container">
+			<form class = "mainForm">
+				<p>Форма обратной связи</p>
+				<ul class = "positionForm">
+					<li><!-- 1 -->
+						<ul>
+							<li>
+								<label for = "user_name">Введите имя: </label>
+								<input type = "text" name = "user_name" id = "user_name"/>
+							</li>
+							<li>
+								<label for = "user_surname">Введите фамилию: </label>
+								<input name = "user_surname" id = "user_surname"/>
+							</li>
+						</ul>
+					</li>
+
+					<li><!-- 2 -->
+						<ul>
+							<li>
+								<label for = "e_addres">Введите ваш e-mail: </label>
+								<input type = "text" name = "e_addres" id = "e_addres"/>
+							</li>
+							<li>
+								<label for = "phone">Введите номер телефона: </label>
+								<input type = "phone" title = "+375331234567 или 80291234567" placeholder="полный формат" name = "phone" id = "phone"/>
+							</li>
+						</ul>
+					</li>
+
+					<li><!-- 3 -->
+						<div>
+							<label for = "theme">Тема: </label>
+							<select type = "text" name = "theme" id = "theme" class = "theme" value = "none"> 
+								<option value = "v0" selected>Без темы</option>
+								<option value = "v1">тема_1</option>
+								<option value = "v2" >тема_2</option>
+								<option value = "v3">тема_3</option>
+							</select>
+						</div>
+					</li>
+
+					<li><!-- 4 -->
+						<div>
+							<label for = "message">Сообщение: </label>
+							<textarea name = "message" class = "mess" id = "mess" rows = "10" cols = "65"></textarea>
+						</div>
+					</li>
+					<li>
+						<div>
+							<input type = "button" value = "Отправить" id = "btnSend"/>
+						</div>
+					</li>
+				</ul>
+			</form>
+		</div>
+	</div>
+	<!--<input type = "button" id = "btn" value = "click here"/>-->
+	
+	<script src="js/script.js"></script>
+</body>
+</html>
